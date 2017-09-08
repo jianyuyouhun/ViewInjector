@@ -1,5 +1,6 @@
 ## README ##
 
+　　关于注解绑定，butterKnife已经是最好的框架了，但是如果我只想注解view和点击事件，其他的都不想用，这时候butterKnife的包就有点大了。所以自己写了一个注解绑定，实现了view，onClick和onLongClick的注入。一个轻量级injector就这样诞生了。
 
 >  本项目是基于运行时机制开发的注解绑定框架
 
