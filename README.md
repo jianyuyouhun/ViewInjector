@@ -41,3 +41,11 @@
 
 	@OnLongClick(R.id.hello_world)
 	private boolean onHelloLongClick(View view) {}
+
+开始注解绑定：
+
+	ViewInjector.inject(activity)
+
+	ViewInjector.inject(dialog)
+
+	ViewInjector.inject(viewHolder, view)
