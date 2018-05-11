@@ -2,6 +2,7 @@ package com.jianyuyouhun.inject.listener;
 
 import android.view.View;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 /**
@@ -23,7 +24,9 @@ public class InjectOnLongClickListener implements View.OnLongClickListener {
     public boolean onLongClick(View v) {
         try {
             return (boolean) method.invoke(target, v);
-        } catch (Exception e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
         return false;//出现异常时返回false，不拦截事件
