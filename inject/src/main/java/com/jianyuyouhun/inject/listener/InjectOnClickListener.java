@@ -3,6 +3,7 @@ package com.jianyuyouhun.inject.listener;
 import android.view.View;
 import android.view.View.OnClickListener;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class InjectOnClickListener implements OnClickListener {
@@ -19,7 +20,9 @@ public class InjectOnClickListener implements OnClickListener {
     public void onClick(View v) {
         try {
             method.invoke(target, v);
-        } catch (Exception e) {
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
     }
