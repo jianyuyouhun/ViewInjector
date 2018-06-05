@@ -50,9 +50,3 @@
 	ViewInjector.inject(dialog)
 
 	ViewInjector.inject(viewHolder, view)
-
-## 关于编译时注解 ##
-
-　　编译时注解相比于运行时注解更快，因为绕过了反射机制，采用编译时就生成对应的绑定代码实现。
-
-　　事实上，我已经写好了相关的框架，但是不会配置远程仓库啊QAQ，所以。。。等我学有所成在放上来吧
