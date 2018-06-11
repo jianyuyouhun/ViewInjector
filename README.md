@@ -22,7 +22,7 @@
 #### 第二步. 在module目录下的gradle中添加依赖 ####
 
 	dependencies {
-	        compile 'com.github.jianyuyouhun:ViewInjector:1.0'
+	        compile 'com.github.jianyuyouhun:ViewInjector:1.2.1'
 	}
 
 #### 代码中使用 ####
